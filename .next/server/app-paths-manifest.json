@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/category/desserts/page": "app/category/desserts/page.js",
+  "/category/drinks/page": "app/category/drinks/page.js",
+  "/category/foods/page": "app/category/foods/page.js",
+  "/chef/[id]/page": "app/chef/[id]/page.js",
+  "/chefs/page": "app/chefs/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/reservation/page": "app/reservation/page.js",
+  "/restaurant/[id]/page": "app/restaurant/[id]/page.js",
+  "/restaurants/page": "app/restaurants/page.js",
+  "/services/page": "app/services/page.js"
+}

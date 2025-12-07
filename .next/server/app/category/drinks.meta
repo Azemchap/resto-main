@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/category/layout,_N_T_/category/drinks/layout,_N_T_/category/drinks/page,_N_T_/category/drinks"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/category/drinks/__PAGE__",
+    "/category/drinks",
+    "/category",
+    "/_index",
+    "/_head"
+  ]
+}

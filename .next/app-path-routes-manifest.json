@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/category/desserts/page": "/category/desserts",
+  "/category/drinks/page": "/category/drinks",
+  "/category/foods/page": "/category/foods",
+  "/chef/[id]/page": "/chef/[id]",
+  "/chefs/page": "/chefs",
+  "/login/page": "/login",
+  "/page": "/",
+  "/reservation/page": "/reservation",
+  "/restaurant/[id]/page": "/restaurant/[id]",
+  "/restaurants/page": "/restaurants",
+  "/services/page": "/services"
+}

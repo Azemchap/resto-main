@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/chefs/layout,_N_T_/chefs/page,_N_T_/chefs"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/chefs/__PAGE__",
+    "/chefs",
+    "/_index",
+    "/_head"
+  ]
+}

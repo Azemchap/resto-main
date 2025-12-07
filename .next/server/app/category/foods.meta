@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/category/layout,_N_T_/category/foods/layout,_N_T_/category/foods/page,_N_T_/category/foods"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/category/foods/__PAGE__",
+    "/category/foods",
+    "/category",
+    "/_index",
+    "/_head"
+  ]
+}

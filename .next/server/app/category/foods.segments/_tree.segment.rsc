@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/cd0bf74b719fadef.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap","style"]
+0:{"buildId":"AUwX42v1-Mh11TqNsBY6r","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"category","paramType":null,"paramKey":"category","hasRuntimePrefetch":false,"slots":{"children":{"name":"foods","paramType":null,"paramKey":"foods","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fafafa;
+    --foreground: #232631;
+    --card: #ffffff;
+    --card-foreground: #232631;
+    --primary: #fdc886;
+    --primary-foreground: #232631;
+    --secondary: #5a4fcf;
+    --secondary-foreground: #ffffff;
+    --muted: #656565;
+    --muted-foreground: #656565;
+    --star: #ffb800;
+    --placeholder: #858585;
+    --border: #e5e5e5;
+    --input: #f2f2f2;
+    --ring: #5a4fcf;
+    --radius: 0.75rem;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  .mask-contain {
+    mask-size: contain;
+  }
+  .mask-no-repeat {
+    mask-repeat: no-repeat;
+  }
+}

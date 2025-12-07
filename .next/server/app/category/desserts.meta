@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/category/layout,_N_T_/category/desserts/layout,_N_T_/category/desserts/page,_N_T_/category/desserts"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/category/desserts/__PAGE__",
+    "/category/desserts",
+    "/category",
+    "/_index",
+    "/_head"
+  ]
+}
