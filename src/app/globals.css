@@ -1,38 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
-@layer base {
-  :root {
-    --background: #fafafa;
-    --foreground: #232631;
-    --card: #ffffff;
-    --card-foreground: #232631;
-    --primary: #fdc886;
-    --primary-foreground: #232631;
-    --secondary: #5a4fcf;
-    --secondary-foreground: #ffffff;
-    --muted: #656565;
-    --muted-foreground: #656565;
-    --star: #ffb800;
-    --placeholder: #858585;
-    --border: #e5e5e5;
-    --input: #f2f2f2;
-    --ring: #5a4fcf;
-    --radius: 0.75rem;
-  }
-
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-  }
+/* Custom CSS variables */
+:root {
+  --background: #fafafa;
+  --foreground: #232631;
+  --card: #ffffff;
+  --card-foreground: #232631;
+  --primary: #fdc886;
+  --primary-foreground: #232631;
+  --secondary: #5a4fcf;
+  --secondary-foreground: #ffffff;
+  --muted: #656565;
+  --muted-foreground: #656565;
+  --star: #ffb800;
+  --placeholder: #858585;
+  --border: #e5e5e5;
+  --input: #f2f2f2;
+  --ring: #5a4fcf;
+  --radius: 0.75rem;
 }
 
-@layer utilities {
-  .mask-contain {
-    mask-size: contain;
-  }
-  .mask-no-repeat {
-    mask-repeat: no-repeat;
-  }
+/* Tailwind v4 theme configuration */
+@theme {
+  /* Font Family */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-star: var(--star);
+  --color-placeholder: var(--placeholder);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Border Radius */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Box Shadows */
+  --shadow-primary: 0 4px 10px 0 rgba(253, 200, 134, 0.8);
+  --shadow-secondary: 0 4px 10px 0 rgba(90, 79, 207, 0.1);
+
+  /* Drop Shadows */
+  --drop-shadow-custom: 8px 8px 25px rgba(102, 102, 102, 0.04);
+  --drop-shadow-custom2: -8px 8px 25px rgba(102, 102, 102, 0.04);
+}
+
+/* Base styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom utilities */
+@utility mask-contain {
+  mask-size: contain;
+}
+
+@utility mask-no-repeat {
+  mask-repeat: no-repeat;
 }

@@ -1,1 +1,153 @@
+# Dependencies
 node_modules
+/.pnp
+.pnp.js
+.pnp.cjs
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE / Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettiercache
+
+# Turbo
+.turbo
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# Storybook
+storybook-static/
+*storybook.log
+
+# Bundle analyzer
+.next/analyze/
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Prisma
+prisma/*.db
+
+# Sentry
+.sentryclirc
+
+# Cache
+.cache
+*.cache
+
+# Logs
+logs
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env*
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Lock files (keep one, ignore alternates if needed)
+# Uncomment to ignore lock files you don't use:
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+# bun.lockb
+
+# AI/ML
+.ipynb_checkpoints/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Secrets
+secrets/
+*.secret
+*.key

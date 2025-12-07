@@ -1,16 +1,13 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { Menu, Search } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
 import {
   Sheet,
   SheetContent,
@@ -18,8 +15,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Menu, Search } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -54,14 +54,14 @@ export function Navbar() {
               item.submenu ? (
                 <li key={item.name} className="flex items-center">
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center gap-1 text-base leading-6 font-medium cursor-pointer hover:text-secondary transition-colors">
+                    <DropdownMenuTrigger className="flex items-center gap-2 text-base leading-6 font-medium cursor-pointer hover:text-secondary transition-colors">
                       {item.name}
                       <Image
                         src="/assets/images/icons/arrow_bottom.svg"
                         alt=""
                         width={24}
                         height={24}
-                        className="transition-transform"
+                        className="transition-transform opacity-80 w-4"
                       />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
