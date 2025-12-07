@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto - Landing Page</title>
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="px-[60px] mt-[60px]">
+      <div class="flex justify-between items-center min-w-[1320px] h-14">
+        <nav>
+          <ul class="flex gap-[30px]">
+            <!-- Home -->
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >Home</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+
+            <!-- Category Dropdown -->
+            <li class="dropdown relative flex flex-col cursor-pointer">
+              <div class="flex items-center h-6 w-full">
+                <button
+                  type="button"
+                  class="dropdown-button text-[16px] leading-[24px] font-medium cursor-pointer w-full text-left"
+                >
+                  Category
+                </button>
+                <div class="flex items-center justify-center h-6 w-6 shrink-0">
+                  <img
+                    src="./assets/images/icons/arrow_bottom.svg"
+                    alt=""
+                    class="dropdown-arrow transition-transform duration-300"
+                  />
+                </div>
+              </div>
+              <ul
+                class="dropdown-menu z-50 opacity-0 flex transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
+              >
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Foods
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Drinks
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="block py-1.5 px-5 text-[16px] leading-[24px] font-medium transition-all duration-300 hover:bg-secondary/5"
+                  >
+                    Desserts
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Services -->
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >Services</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+
+            <!-- About Us -->
+            <li class="group flex flex-col justify-between h-[28px]">
+              <a href="#" class="text-[16px] leading-[24px] font-medium"
+                >About us</a
+              >
+              <span
+                class="transition-all duration-300 h-0.5 w-full rounded-full bg-secondary opacity-0 group-hover:opacity-100"
+              ></span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Logo -->
+        <a href="./">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt=""
+            class="h-[38px] w-auto"
+          />
+        </a>
+
+        <!-- Search and Login -->
+        <div class="flex gap-5">
+          <form
+            class="group flex w-[322px] gap-2.5 py-4 px-7 bg-white rounded-[12px] transition-all duration-300 focus-within:ring-2 focus-within:ring-secondary hover:ring-2 hover:ring-secondary"
+          >
+            <div class="flex items-center justify-center h-6 w-6 shrink-0">
+              <img src="./assets/images/icons/search.svg" alt="" class="" />
+            </div>
+            <input
+              type="text"
+              class="w-full text-[16px] font-medium leading-6 placeholder-placeholder group-hover:outline-none focus:outline-none"
+              placeholder="Search your favorite food"
+            />
+          </form>
+          <a
+            href="#"
+            class="w-[104px] h-14 flex items-center justify-center bg-secondary/10 text-secondary text-[16px] font-semibold leading-6 rounded-[12px] transition-all duration-300 hover:shadow-secondary"
+          >
+            Log In
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Ads Section -->
+      <section class="relative flex justify-center">
+        <div class="swiper !pl-[140px] !pr-[60px]">
+          <div class="swiper-wrapper flex py-[60px]">
+            <!-- Item 1 -->
+            <div class="group swiper-slide relative !w-[1128px] !h-[564px]">
+              <div class="w-full h-full rounded-3xl overflow-clip">
+                <img
+                  src="./assets/images/thumbnails/ads-1.png"
+                  alt=""
+                  class="object-cover w-full"
+                />
+              </div>
+              <div
+                class="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-1 -left-20 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
+              >
+                <div class="flex items-center h-[27px] w-[210px]">
+                  <div class="flex gap-[6.5px] -mt-[3px] pr-[3px]">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                  </div>
+                  <div class="flex gap-1 items-center">
+                    <p class="text-lg leading-[27px] font-semibold text-star">
+                      5.0
+                    </p>
+                    <p class="text-[16px] text-muted">(5.2K+)</p>
+                  </div>
+                </div>
+                <h2 class="text-[22px] font-semibold leading-[33px]">
+                  Padang Restaurant
+                </h2>
+                <p class="text-lg font-semibold leading-[27px] text-muted">
+                  IDR 49.999 - IDR 560.000
+                </p>
+                <div class="flex gap-1.5 items-center">
+                  <div class="h-6 w-6 flex items-center justify-center">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Padang, Indonesia
+                  </p>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center text-[16px] font-semibold leading-6 bg-primary rounded-[12px] w-[226px] h-14 hover:shadow-primary transition-all duration-300"
+                  >
+                    <span>Make Reservation</span>
+                    <img
+                      src="./assets/images/icons/arrow_right.svg"
+                      alt=""
+                      class=""
+                    />
+                  </a>
+                  <div class="flex gap-1.5 items-center">
+                    <img
+                      src="./assets/images/icons/info_square.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      No extra cost
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="group swiper-slide relative !w-[1128px] !h-[564px]">
+              <!-- ini image -->
+              <div class="w-full h-full rounded-3xl overflow-clip">
+                <img
+                  src="./assets/images/thumbnails/ads-2.png"
+                  alt=""
+                  class="object-cover w-full"
+                />
+              </div>
+              <!-- ini details -->
+              <div
+                class="absolute transition-all duration-300 opacity-0 group-hover:opacity-100 flex flex-col gap-1 -left-20 top-[133px] bottom-[134px] h-[297px] w-[390px] rounded-3xl bg-white pl-6 py-6 pr-[140px]"
+              >
+                <div class="flex items-center h-[27px] w-[210px]">
+                  <div class="flex gap-[6.5px] -mt-[3px] pr-[3px]">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] shrink-0"
+                    />
+                  </div>
+                  <div class="flex gap-1 items-center">
+                    <p class="text-lg leading-[27px] font-semibold text-star">
+                      5.0
+                    </p>
+                    <p class="text-[16px] text-muted">(5.2K+)</p>
+                  </div>
+                </div>
+                <h2 class="text-[22px] font-semibold leading-[33px]">
+                  Jember Restaurant
+                </h2>
+                <p class="text-lg font-semibold leading-[27px] text-muted">
+                  IDR 39.999 - IDR 460.000
+                </p>
+                <div class="flex gap-1.5 items-center">
+                  <div class="h-6 w-6 flex items-center justify-center">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Jember, Indonesia
+                  </p>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <a
+                    href="#"
+                    class="flex items-center justify-center text-[16px] font-semibold leading-6 bg-primary rounded-[12px] w-[226px] h-14 hover:shadow-primary transition-all duration-300"
+                  >
+                    <span>Make Reservation</span>
+                    <img
+                      src="./assets/images/icons/arrow_right.svg"
+                      alt=""
+                      class=""
+                    />
+                  </a>
+                  <div class="flex gap-1.5 items-center">
+                    <img
+                      src="./assets/images/icons/info_square.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      No extra cost
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why us? -->
+      <section class="flex justify-center">
+        <div class="w-[1320px] m-[60px]">
+          <div
+            class="flex w-fit mx-auto flex-col gap-1.5 text-center mb-[41px]"
+          >
+            <span
+              class="text-[16px] leading-6 font-semibold text-secondary uppercase"
+              >Special Benefit For You</span
+            >
+            <h2 class="text-[28px] leading-[42px] font-semibold">
+              Why Should Choose Us?
+            </h2>
+          </div>
+          <div class="flex w-full gap-5">
+            <!-- Item 1 -->
+            <div
+              class="flex flex-col gap-[54px] h-fit pt-6 min-h-[347px] w-[315px] bg-white rounded-3xl"
+            >
+              <div class="flex flex-col gap-6">
+                <div
+                  class="ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
+                >
+                  <img
+                    src="./assets/images/icons/discount.svg"
+                    alt=""
+                    class="h-[58px] w-[58px]"
+                  />
+                </div>
+                <h3 class="text-lg leading-[27px] font-semibold text-center">
+                  Extra Discounts
+                </h3>
+                <p
+                  class="w-[267px] -mt-3 mx-6 text-[16px] leading-6 text-muted text-center"
+                >
+                  Get your special discount by using our reservation
+                </p>
+              </div>
+              <a
+                href="#"
+                class="w-full mt-auto h-[72px] flex items-center justify-center text-[16px] leading-6 font-semibold rounded-t-xl rounded-b-3xl transition-all duration-300 hover:bg-primary"
+              >
+                <span>View Details</span>
+                <img
+                  src="./assets/images/icons/arrow_right.svg"
+                  alt=""
+                  class="h-6 w-6"
+                />
+              </a>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col gap-[54px] h-fit pt-6 min-h-[347px] w-[315px] bg-white rounded-3xl"
+            >
+              <div class="flex flex-col gap-6">
+                <div
+                  class="ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
+                >
+                  <img
+                    src="./assets/images/icons/eat.svg"
+                    alt=""
+                    class="h-[58px] w-[58px]"
+                  />
+                </div>
+                <h3 class="text-lg leading-[27px] font-semibold text-center">
+                  Come and Eat
+                </h3>
+                <p
+                  class="w-[267px] -mt-3 mx-6 text-[16px] leading-6 text-muted text-center"
+                >
+                  Get your own table quickly & without waiting in line
+                </p>
+              </div>
+              <a
+                href="#"
+                class="w-full mt-auto h-[72px] flex items-center justify-center text-[16px] leading-6 font-semibold rounded-t-xl rounded-b-3xl transition-all duration-300 hover:bg-primary"
+              >
+                <span>View Details</span>
+                <img
+                  src="./assets/images/icons/arrow_right.svg"
+                  alt=""
+                  class="h-6 w-6"
+                />
+              </a>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="flex flex-col gap-[54px] h-fit pt-6 min-h-[347px] w-[315px] bg-white rounded-3xl"
+            >
+              <div class="flex flex-col gap-6">
+                <div
+                  class="ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
+                >
+                  <img
+                    src="./assets/images/icons/cost.svg"
+                    alt=""
+                    class="h-[58px] w-[58px]"
+                  />
+                </div>
+                <h3 class="text-lg leading-[27px] font-semibold text-center">
+                  No Extra Fee
+                </h3>
+                <p
+                  class="w-[267px] -mt-3 mx-6 text-[16px] leading-6 text-muted text-center"
+                >
+                  Get tax free if you want to order food and make a reservation
+                </p>
+              </div>
+              <a
+                href="#"
+                class="w-full mt-auto h-[72px] flex items-center justify-center text-[16px] leading-6 font-semibold rounded-t-xl rounded-b-3xl transition-all duration-300 hover:bg-primary"
+              >
+                <span>View Details</span>
+                <img
+                  src="./assets/images/icons/arrow_right.svg"
+                  alt=""
+                  class="h-6 w-6"
+                />
+              </a>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="flex flex-col gap-[54px] h-fit pt-6 min-h-[347px] w-[315px] bg-white rounded-3xl"
+            >
+              <div class="flex flex-col gap-6">
+                <div
+                  class="ml-[117px] mr-[118px] flex items-center justify-center h-20 w-20 rounded-full bg-primary/15"
+                >
+                  <img
+                    src="./assets/images/icons/sparkle.svg"
+                    alt=""
+                    class="h-[58px] w-[58px]"
+                  />
+                </div>
+                <h3 class="text-lg leading-[27px] font-semibold text-center">
+                  Guaranteed Cleanliness
+                </h3>
+                <p
+                  class="w-[267px] -mt-3 mx-6 text-[16px] leading-6 text-muted text-center"
+                >
+                  We ensure the cleanliness of the place as well as the food
+                </p>
+              </div>
+              <a
+                href="#"
+                class="w-full mt-auto h-[72px] flex items-center justify-center text-[16px] leading-6 font-semibold rounded-t-xl rounded-b-3xl transition-all duration-300 hover:bg-primary"
+              >
+                <span>View Details</span>
+                <img
+                  src="./assets/images/icons/arrow_right.svg"
+                  alt=""
+                  class="h-6 w-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular restaurant -->
+      <section class="flex justify-center">
+        <div class="flex items-center w-[1320px] m-[60px]">
+          <div class="w-[367px]">
+            <div class="flex flex-col gap-1.5">
+              <span
+                class="text-[16px] leading-6 font-semibold text-secondary uppercase"
+                >Top 3 Featured Restaurant</span
+              >
+              <h2 class="w-full text-[28px] leading-[42px] font-semibold">
+                Most Popular Restaurants
+              </h2>
+            </div>
+            <p class="mt-5 w-[360px] pr-5 text-[16px] leading-6 text-muted">
+              The best restaurant in our opinion is how much customers like it
+              in terms of place, price, comfort and of course the taste of the
+              food itself.
+            </p>
+            <a
+              href="#"
+              class="mt-14 flex items-center justify-center text-[16px] leading-6 font-semibold h-[56px] w-[238px] bg-primary rounded-xl transition-all duration-300 hover:shadow-primary"
+            >
+              <span>View All Restaurant</span>
+              <img
+                src="./assets/images/icons/arrow_right.svg"
+                alt=""
+                class="h-6 w-6"
+              />
+            </a>
+          </div>
+          <div class="ml-[85px] flex gap-5">
+            <!-- Card 1 -->
+            <div
+              class="card group transition-all duration-300 relative h-[475px] w-[400px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="1"
+            >
+              <img
+                src="./assets/images/thumbnails/resto-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="card-info transition-all duration-300 delay-1000 ease-in-out flex gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      5.0
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(7.6K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Bind Balorant
+                  </h3>
+                  <div class="flex gap-1.5">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      Jakarta, Indonesia
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card group transition-all duration-300 relative h-[475px] w-[214px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="2"
+            >
+              <img
+                src="./assets/images/thumbnails/resto-2.png"
+                alt=""
+                class="object-cover h-full w-full"
+              />
+              <div
+                class="card-info transition-all duration-300 delay-1000 ease-in-out gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl hidden"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      4.8
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(5.2K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Green Garden
+                  </h3>
+                  <div class="flex gap-1.5">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      Bandung, Indonesia
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="card group transition-all duration-300 relative h-[475px] w-[214px] rounded-3xl overflow-clip shrink-0 hover:w-[400px]"
+              data-card="3"
+            >
+              <img
+                src="./assets/images/thumbnails/resto-3.png"
+                alt=""
+                class="object-cover h-full w-full"
+              />
+              <div
+                class="card-info transition-all duration-300 delay-1000 ease-in-out gap-2 p-6 items-center absolute left-6 bottom-6 right-6 bg-white rounded-3xl hidden"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="h-auto w-[18px] -mt-[3px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      4.9
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(6.8K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Sundanese Delight
+                  </h3>
+                  <div class="flex gap-1.5">
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6"
+                    />
+                    <p class="text-[16px] leading-6 text-muted">
+                      Sunda, Indonesia
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Near you restaurant -->
+      <section class="flex justify-center">
+        <div class="flex flex-col gap-[34px] w-[1321px] m-[60px]">
+          <div class="flex w-full items-center justify-between">
+            <div class="flex flex-col gap-1.5">
+              <span
+                class="text-[16px] leading-6 font-semibold text-secondary uppercase"
+                >Restaurant Based by City</span
+              >
+              <h2
+                class="w-full text-nowrap text-[28px] leading-[42px] font-semibold"
+              >
+                Restaurant Near You
+              </h2>
+            </div>
+            <div class="relative dropdown flex flex-col">
+              <button
+                type="button"
+                class="dropdown-button flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] rounded-xl bg-[#f2f2f2]"
+              >
+                <img src="./assets/images/icons/Location.svg" alt="" class="" />
+                <div class="flex">
+                  <p class="text-[16px] leading-6 font-medium text-muted">
+                    Jakarta, Indonesia
+                  </p>
+                  <div class="flex items-center justify-center h-6 w-6">
+                    <img
+                      src="./assets/images/icons/arrow_bottom.svg"
+                      alt=""
+                      class="dropdown-arrow transition-all duration-300"
+                    />
+                  </div>
+                </div>
+              </button>
+              <ul
+                class="dropdown-menu z-50 opacity-0 transition-all duration-300 absolute top-full left-0 mt-2 min-w-[150px] flex-col gap-1.5 bg-white rounded-xl py-2.5 shadow-lg"
+              >
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bandung, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Bali, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+                <li class="group">
+                  <button
+                    type="button"
+                    class="flex cursor-pointer gap-1.5 px-6 py-5 items-center h-[64px] w-[252px] transition-all duration-300 hover:bg-[#f2f2f2]"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class=""
+                    />
+                    <div class="flex">
+                      <p class="text-[16px] leading-6 font-medium text-muted">
+                        Jember, Indonesia
+                      </p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <!-- Item 1 -->
+            <div
+              class="relative h-[415px] w-[427px] rounded-3xl overflow-clip shrink-0"
+            >
+              <img
+                src="./assets/images/thumbnails/near-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      5.0
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(6.6K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Batavia Restaurant
+                  </h3>
+                  <p class="text-lg font-semibold leading-6 text-muted">
+                    IDR 29.000 - IDR 259.999
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="relative h-[415px] w-[427px] rounded-3xl overflow-clip shrink-0"
+            >
+              <img
+                src="./assets/images/thumbnails/near-2.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      5.0
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(3.6K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Split Ascent Restaurant
+                  </h3>
+                  <p class="text-lg font-semibold leading-6 text-muted">
+                    IDR 49.999 - IDR 560.000
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="relative h-[415px] w-[427px] rounded-3xl overflow-clip shrink-0"
+            >
+              <img
+                src="./assets/images/thumbnails/near-3.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="flex gap-[35px] p-6 items-center absolute left-6 bottom-[33px] right-6 bg-white rounded-3xl"
+              >
+                <div class="flex flex-col gap-1 w-[260px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/images/icons/star.svg"
+                      alt=""
+                      class="w-[18px] -mt-[3.5px] mr-[3px]"
+                    />
+                    <p
+                      class="text-[16px] leading-6 font-semibold text-star mr-1"
+                    >
+                      5.0
+                    </p>
+                    <p class="text-[16px] leading-6 text-muted">(11K+)</p>
+                  </div>
+                  <h3 class="text-lg leading-[27px] font-semibold">
+                    Daza Fracture Restaurant
+                  </h3>
+                  <p class="text-lg font-semibold leading-6 text-muted">
+                    IDR 29.999 - IDR 560.000
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center h-9 w-9 rounded-xl bg-primary shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/sign_right.svg"
+                    alt=""
+                    class=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="mt-[22px] mx-auto flex items-center justify-center h-14 w-[238px] bg-primary rounded-xl text-[16px] leading-6 font-semibold transition-all duration-300 hover:shadow-primary"
+          >
+            <span>View All Restaurant</span>
+            <img
+              src="./assets/images/icons/arrow_right.svg"
+              alt=""
+              class="h-6 w-6"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Expert chef -->
+      <section class="mt-[60px] mb-[123px] flex justify-center">
+        <div class="flex items-center gap-[64px] w-[1321px]">
+          <!-- Tab content -->
+          <div class="tab-content relative h-[848px] w-[660px]">
+            <div
+              class="absolute left-[60px] right-10 h-full w-[560px] rounded-3xl overflow-clip"
+            >
+              <img
+                src="./assets/images/thumbnails/chef-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="absolute top-10 right-0 px-[46px] py-[30px] flex flex-col items-center h-[203px] w-[179px] bg-white rounded-3xl drop-shadow-custom"
+            >
+              <div
+                class="mb-3 flex items-center justify-center h-20 w-20 bg-[#FFF7ED] rounded-full"
+              >
+                <img
+                  src="./assets/images/icons/shield.svg"
+                  alt=""
+                  class="h-[50px] w-[50px] shrink-0"
+                />
+              </div>
+              <div class="w-[87px] text-center">
+                <p
+                  class="experience-years text-lg leading-[27px] font-semibold"
+                >
+                  12 Years
+                </p>
+                <p class="text-[16px] leading-6 text-muted">Experience</p>
+              </div>
+            </div>
+            <div
+              class="p-6 absolute left-0 bottom-10 flex items-center gap-3 h-auto w-[330px] rounded-3xl bg-white drop-shadow-custom2"
+            >
+              <div class="h-[132px] w-[96px] rounded-xl overflow-clip shrink-0">
+                <img
+                  src="./assets/images/thumbnails/resto-4.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[174px] h-auto">
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-[16px] leading-6 text-muted"
+                      >Chef at restaurant:</span
+                    >
+                    <p class="resto-name text-lg leading-[27px] font-semibold">
+                      Pearl Dolphin
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="flex text-[16px] leading-6 font-semibold text-primary"
+                  >
+                    <span>View Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 w-[596px]">
+            <div class="flex flex-col gap-1">
+              <span
+                class="text-[18px] leading-6 font-semibold text-secondary uppercase"
+                >Top 4 Expert Chefs</span
+              >
+              <h2
+                class="w-full text-nowrap text-[32px] leading-[48px] font-semibold"
+              >
+                Expert Chefs In Fuddy
+              </h2>
+            </div>
+            <!-- Tab menu -->
+            <div class="tab-menu flex flex-col gap-5">
+              <!-- Tab item 1 -->
+              <div
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+              >
+                <span
+                  class="text-[16px] leading-6 font-medium text-muted uppercase"
+                  >Pizza</span
+                >
+                <div class="w-full flex items-center justify-between">
+                  <h2
+                    class="text-[22px] leading-[33px] font-semibold line-clamp-1 mr-0.5"
+                  >
+                    Phoenix Satcheup
+                  </h2>
+                  <a
+                    href="#"
+                    class="flex text-[16px] opacity-100 leading-6 font-medium text-primary shrink-0"
+                  >
+                    <span>Profile Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary shrink-0"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Jakarta, Indonesia
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tab item 2 -->
+              <div
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+              >
+                <span
+                  class="text-[16px] leading-6 font-medium text-muted uppercase"
+                  >Vegan</span
+                >
+                <div class="w-full flex items-center justify-between">
+                  <h2
+                    class="text-[22px] leading-[33px] font-semibold line-clamp-1 mr-0.5"
+                  >
+                    Chamber Botfrag
+                  </h2>
+                  <a
+                    href="#"
+                    class="opacity-0 flex text-[16px] leading-6 font-medium text-primary shrink-0"
+                  >
+                    <span>Profile Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary shrink-0"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Bandung, Indonesia
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tab item 3 -->
+              <div
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+              >
+                <span
+                  class="text-[16px] leading-6 font-medium text-muted uppercase"
+                  >Roast Chicken</span
+                >
+                <div class="w-full flex items-center justify-between">
+                  <h2
+                    class="text-[22px] leading-[33px] font-semibold line-clamp-1 mr-0.5"
+                  >
+                    Asep Vandal
+                  </h2>
+                  <a
+                    href="#"
+                    class="opacity-0 flex text-[16px] leading-6 font-medium text-primary shrink-0"
+                  >
+                    <span>Profile Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground shrink-0"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Sunda, Indonesia
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tab item 4 -->
+              <div
+                class="tab-item cursor-pointer p-6 flex flex-col gap-1.5 h-[141px] w-[596px] rounded-3xl group transition-all duration-300 hover:bg-white"
+              >
+                <span
+                  class="text-[16px] leading-6 font-medium text-muted uppercase"
+                  >Beef Steak</span
+                >
+                <div class="w-full flex items-center justify-between">
+                  <h2
+                    class="text-[22px] leading-[33px] font-semibold line-clamp-1 mr-0.5"
+                  >
+                    I Made Invoker
+                  </h2>
+                  <a
+                    href="#"
+                    class="opacity-0 flex text-[16px] leading-6 font-medium text-primary shrink-0"
+                  >
+                    <span>Profile Details</span>
+                    <div
+                      class="flex items-center justify-center h-6 w-6 mask-[url('./assets/images/icons/arrow_right.svg')] mask-no-repeat mask-contain bg-primary"
+                    >
+                      <img
+                        src="./assets/images/icons/arrow_right.svg"
+                        alt=""
+                        class="opacity-0"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <div
+                    class="location-icon transition-all duration-300 mask-[url('./assets/images/icons/Location.svg')] mask-no-repeat mask-contain bg-foreground shrink-0"
+                  >
+                    <img
+                      src="./assets/images/icons/Location.svg"
+                      alt=""
+                      class="h-6 w-6 opacity-0"
+                    />
+                  </div>
+                  <p class="text-[16px] leading-6 text-muted">
+                    Bali, Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-[30px] w-fit flex items-center justify-center text-[16px] leading-6 font-semibold px-7 py-4 bg-primary rounded-xl transition-all duration-300 hover:shadow-primary"
+            >
+              <span>View All Chef</span>
+              <div class="flex items-center justify-center h-6 w-6 shrink-0">
+                <img
+                  src="./assets/images/icons/arrow_right.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/dropdown.js"></script>
+  </body>
+</html>
